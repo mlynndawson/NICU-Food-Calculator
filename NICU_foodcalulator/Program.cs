@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace NICU_foodcalulator
 {
@@ -9,6 +10,11 @@ namespace NICU_foodcalulator
             Console.WriteLine("NICU Nutrition Calculator!");
             Console.Write("Enter infant's name: ");
             string name = Console.ReadLine();
+            newBornCalculations();
+        }
+
+        private static void newBornCalculations()
+        {
             Console.Write("Enter Birth weight (kg): ");
             decimal birthWeight = decimal.Parse(Console.ReadLine());
 
@@ -34,7 +40,7 @@ namespace NICU_foodcalulator
 
 
             decimal changeInWeight = (todayWeight-birthWeight) / birthWeight;
-            Console.WriteLine($"Change in {name}'s weight {changeInWeight:P}");
+            Console.WriteLine($"Change in weight {changeInWeight:P}");
 
             decimal totalFoodIntake = foodMouth + foodTube + foodIV;
             Console.WriteLine($"Total intake (mL): {totalFoodIntake}mL");
@@ -97,7 +103,7 @@ namespace NICU_foodcalulator
 
             }
             
-           
+           }
 
            // decimal foodMouthCal
             //decimal foodMouthCalKg
