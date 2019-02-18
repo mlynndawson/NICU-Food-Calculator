@@ -1,52 +1,31 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
+using System.Text;
 using System.Linq;
-using NICU_foodcalculator.Classes;
 
 namespace NICU_foodcalulator
 {
-    class Program
+    public class NICU_calculations
     {
-        static void Main(string[] args)
-        {    
-            NICU_calculations baby = new NICU_calculations();
-            Main_menu userFront = new Main_menu();
-        }
-
-        //private static void newBornCalculations()
-        //{
-        //    Console.Write("Enter Birth weight (kg): ");
-        //    decimal birthWeight = decimal.Parse(Console.ReadLine());
-
-        //    Console.Write("Today's Weight (kg): ");
-        //    decimal todayWeight = decimal.Parse(Console.ReadLine());
-
-        //    Console.Write("Food in-take by mouth (mL): ");
-        //    decimal foodMouth = decimal.Parse(Console.ReadLine());
-        //    Console.Write("Cal/oz intake by mouth: ");
-        //    decimal calOzMouth = decimal.Parse(Console.ReadLine());
-
-        //    Console.Write("Food in-take by tube (mL): ");
-        //    decimal foodTube = decimal.Parse(Console.ReadLine());
-        //    Console.Write("Cal/oz intake by tube: ");
-        //    decimal calOzTube = decimal.Parse(Console.ReadLine());
-
-        //    Console.Write("Food in-take by IV (mL): ");
-        //    decimal foodIV = decimal.Parse(Console.ReadLine());
-        //    Console.Write("TPN Cal/kg: ");
-        //    decimal calKgIV = decimal.Parse(Console.ReadLine());
-
-        //    Console.WriteLine("================================================");
+        //todayWeight
+        //BirthWeight
+        ///derived DeltaWeight
+        //totalFoodIntake
+               //foodMouth
+               //foodTube
+               //foodIV
 
 
-        //    decimal changeInWeight = (todayWeight-birthWeight) / birthWeight;
+
+
+
+       // decimal changeInWeight = (todayWeight - birthWeight) / birthWeight);
         //    Console.WriteLine($"Change in weight {changeInWeight:P}");
 
         //    decimal totalFoodIntake = foodMouth + foodTube + foodIV;
         //    Console.WriteLine($"Total intake (mL): {totalFoodIntake}mL");
 
-            
+
         //    decimal totalIntakeMLKG= 0;
         //    decimal calKgMouth = 0;
         //    decimal calKgTube = 0;
@@ -89,7 +68,7 @@ namespace NICU_foodcalulator
 
         //        if (totalCalKg < 110)
         //        {
-                   
+
         //            decimal deficitCalKg = 0;
         //            decimal deficitMlMouth = 0;
         //            decimal deficitMlTube = 0;
@@ -100,17 +79,5 @@ namespace NICU_foodcalulator
 
         //            Console.WriteLine($"Increase total intake by mouth by {deficitMlMouth:N2}mL");
 
-        //        }
-
-        //    }
-            
-        //   }
-
-           // decimal foodMouthCal
-            //decimal foodMouthCalKg
-            
-            //decimal lipidContent
-            //decimal sugaContent
-            //decimal totalCalorie
-        }
     }
+}
