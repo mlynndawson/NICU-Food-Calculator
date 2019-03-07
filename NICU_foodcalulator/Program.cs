@@ -3,15 +3,19 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using NICU_foodcalculator.Classes;
+using NICU_foodcalculator.DAL;
 
 namespace NICU_foodcalulator
 {
     class Program
     {
         static void Main(string[] args)
-        {    
-            NICU_calculations baby = new NICU_calculations();
-            Main_menu userFront = new Main_menu();
+        {
+
+            IBabyDAO babyDAO = new BabySqlDAO (@"Server=.\SQLEXPRESS;Database=BabyData;Trusted_Connection=True;");
+            //NICU_calculations cal = new NICU_calculations();
+            Main_menu userFront = new Main_menu(babyDAO);
+            userFront.Run();
         }
 
         //private static void newBornCalculations()
